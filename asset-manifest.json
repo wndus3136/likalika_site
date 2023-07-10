@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/likalika_site/static/css/main.79a0c955.css",
+    "main.js": "/likalika_site/static/js/main.9613dabd.js",
+    "static/js/787.a3363455.chunk.js": "/likalika_site/static/js/787.a3363455.chunk.js",
+    "index.html": "/likalika_site/index.html",
+    "main.79a0c955.css.map": "/likalika_site/static/css/main.79a0c955.css.map",
+    "main.9613dabd.js.map": "/likalika_site/static/js/main.9613dabd.js.map",
+    "787.a3363455.chunk.js.map": "/likalika_site/static/js/787.a3363455.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.79a0c955.css",
+    "static/js/main.9613dabd.js"
+  ]
+}
