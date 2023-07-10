@@ -1,0 +1,64 @@
+a{text-decoration: none; color: #000;}
+.App{
+  text-align: center;
+}
+
+.container{
+  margin: 0 auto;
+ }
+ .container .main_visual{
+   width: 100%;
+   margin: 0 auto;
+   margin-bottom: 30px;
+ }
+ .container .event_content{
+   width: 100%;
+   margin-bottom: 50px;
+ }
+ .container .event_content img{
+  width: calc((100% - 20px) /2);
+  margin-right: 20px;
+  cursor: pointer;
+}
+.container .event_content img:hover{
+  scale: 1.02;
+}
+.container .event_content img:last-child{
+  margin: 0;
+}
+ .col{
+  width: 300px;
+  text-align: center;
+ }
+ .col img{
+  width: 300px;
+ }
+ .col img:hover{
+  scale: 1.02;
+ }
+ .col h4{
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+ }
+ .col .price1{
+  text-decoration: line-through;
+  color: #999;
+ }
+ .col .price2{
+  font-size: 20px;
+ }
+ .col button{
+  background: inherit;
+  width: 200px;
+  height: 40px;
+  background-color: #000;
+  color: #fff;
+  margin-bottom: 50px;
+  border-radius: 50px;
+
+ }
+ .col button:hover{
+  background-color: #eee;
+  color: #000;
+ }
