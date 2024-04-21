@@ -1,38 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+.en{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+}
+
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.menu{
+  position: fixed;
+  top: 0;
+  padding: 0;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  transition: height 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
+  z-index: 99999;
+  background-color: transparent;
+  background-color: #fff;
+}
+.menu:hover {
+  border-bottom: 1px solid #ccc;
+  background-color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar-menu {
+  position: absolute;
+  width: 1300px;
+  height: 100px;
+  margin: 0 auto;
+  padding: 0;
+  top: 0;
+  left: 0; right: 0;
+ 
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logo {
+  float: left;
+  min-width: 200px;
+  height: 100px;
+  margin: 0;
+ /*  padding: 10px 10px; box-sizing: border-box; */
+  background-image: url(../public/lika_img/likalika.png);
+  background-position: 10px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.me-auto {
+  position: relative;
+  width: 980px;
+  margin-right: 0px !important;
+  padding-left: 300px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+}
+
+/* li */
+.menu-title{
+  position: relative;
+  width: 170px;
+  height: 100px;
+  line-height: 100px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  text-align-last: left;
+  cursor: pointer;
+}
+.menu-inner{
+  display: none;
+}
+.menu-inner li{
+  line-height: 40px;
+  font-size: 13px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: bold;
+  text-align-last: left;
+  cursor: pointer;
+}
+.me-auto:hover .menu-inner{
+  display: block;
+}
+.me-auto:hover .menu-title,
+.me-auto:hover .menu-title .menu-inner li{
+  color: #999;
+}
+.me-auto .menu-title:hover,
+.me-auto .menu-title:hover .menu-inner li
+{
+  color: #000;
+}
+.me-auto .menu-title .menu-inner li:hover{
+  color: #364ec8;
+}
+
+.lnb {
+  position: relative;
+  float: left;
+  width: 120px;
+}
+
+.lnb .nav-link {
+  margin-right: 10px;
+  color: #000;
+}
+
+.lnb .nav-link:hover {
+  color: #364ec8;
+}
+.cart-count {
+  position: absolute;
+  top: 5px; left: -10px;
+  width: 20px; height: 20px;
+  line-height: 20px;
+  border-radius: 50%;
+  background-color: #364ec8;
+  color: #fff;
+  font-size: 12px;
+
+}
+
+
+.lnb .nav-link .svg-inline--fa {
+  font-size: 21px;
+}
+/* main visual slide */
+.main {
+  width: 100%;
+  margin-bottom: 50px;
+}
+.slide-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.main_visual {
+  position: relative;
+  padding-top: 100px;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  /* transition: opacity 1s ease-in-out; */
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+.main_visual img{
+  width: 100%;
+  height: auto;
+}
+ 
+.main-container{
+  margin: 0 auto;
+  width: 1300px;
+ }
+.event_content {
+  padding: 50px 0 50px 0;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.event_content img {
+  width: calc((100% - 20px) / 2);
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.event_content img:hover {
+  scale: 1.01;
+}
+
+.main .event_content img:last-child {
+  margin: 0;
+}
+.main-container strong{
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 100px;
+}
+
+.on {
+  display: block;
+}
+
+.col {
+  position: relative;
+  width: 300px;
+  text-align: left;
+  margin-top: 20px;
+}
+.col img {
+  width: 300px;
+}
+
+.col img:hover {
+  scale: 1.02;
+}
+
+.col h4 {
+  margin-top: 30px;
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.col p {
+  margin-left: 10px;
+}
+.price{
+  font-size: 18px;
+}
+
+
+.col button {
+  position: absolute;
+  right: 35px;
+  bottom: 90px;
+  background: inherit;
+  width: 40px;
+  height: 40px;
+  background-color: #000;
+  color: #fff;
+  margin-bottom: 50px;
+  border-radius: 50px;
+}
+
+.col button:hover {
+  background-color: #eee;
+  color: #000;
+}
+
+.search_outbox{
+  display: block;
+  position: fixed;
+  top: 0;
+  width: 100%; height: 100%;
+  background-color: #fff;
+  z-index: 99999;
+  opacity: 0.5;
+}
+ 
+.search_box {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 384px;
+  height: 500px;
+  background-color: #eee;
+  z-index: 99999; 
+  padding: 42px; box-sizing: border-box;
+  border-radius: 0 0 0 50px;
+}
+.search_close_btn{
+  position: absolute;
+  color: #000000B3;
+  font-size: 30px;
+  width: 40px; height: 40px;
+  top: 10px; right: 10px;
+  cursor: pointer;
+
+}
+.search_close_btn:hover{
+  color: #000;
+}
+
+.search_box >h5{
+  color: #000000B3;
+  margin: 10px 0 15px 5px;
+  width: 100%;
+  text-align: left;
+}
+.filter-content {
+  height: 30px; width: 100%;
+  background-color: #fff;
+  border-radius: 40px;
+  padding: 5px; box-sizing: border-box;
+  margin-bottom: 30px;
+  /* border: 1px solid #eee; */
+}
+.search-main, .search-txt {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  margin-left: 10px;
+  color: #000000B3;
+  font-size: 14px;
+  line-height: 20px;
+  width: 200px;
+}
+.search-button, .search-btn {
+  color: #000000B3;
+  float: right;
+  width: 40px; height: 100%;
+  border-radius: 50%;
+  background-color:  rgba(0, 0, 0, 0);
+  border: none;
+  font-size: 14px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+}
+.search_keyword >.kr{
+  font-size: 14px;
+  margin-left: 0;
+  width: 65px;
+  background-color: #000;
+  color: #fff;
+}
+.search_keyword >p {
+  text-align: left;
+  margin-bottom: 3px;
+  line-height: 1.5;
+}
+.search_keyword > p > span {
+  height: auto; /* 높이 자동으로 조절 (기존의 고정된 높이 제거) */
+  display: inline-block;
+  padding: 2px 5px;
+  vertical-align: middle;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  line-height: 1.5; /* 줄 높이 설정 */
 }
 
-.App-link {
-  color: #61dafb;
+.search_keyword > p > span::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1); /* 배경색은 여기서 조정 */
+  transition: width 0.25s ease-in-out; /* 너비 변화에 대한 애니메이션 */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search_keyword > p > span:hover::before {
+  width: 100%; /* 호버 시 전체 너비로 확장 */
+}
+.kakao{
+  position: fixed;
+  bottom: 28px; right: 20px;
+  width: 50px; height: 50px;
+  background-color:red;
+  border-radius: 20px;
+  background-image: url(../public/lika_img/Q&A.png);
+  background-size: 55px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  cursor: pointer;
 }

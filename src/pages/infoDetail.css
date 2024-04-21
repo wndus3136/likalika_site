@@ -1,0 +1,11 @@
+.infoDetail >h1{
+    font-size: 23px;
+    margin: 40px 0;
+}
+.infoDetail >p{
+    font-size: 14px;
+    width: 1000px;
+    padding: 0 10px; box-sizing: border-box;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}

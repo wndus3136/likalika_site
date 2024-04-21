@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.detail_page{
+  padding-top: 100px;
+}
+.tag{
+  width: 1300px;
+  margin: 0 auto;
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+.tag >span{
+  font-family: 'Poppins', sans-serif;
+  font-weight: normal;
+}
+.rute{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+/*  */
+.detail_container{  
+  position: relative;
+  padding: 0 64px 0 64px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 100px;
+}
+.detail_container_box{
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 64px;
+}
+.detail_left{
+  min-width: 760px;
+  height: auto;
+}
+.banner_img{
+  /* 이미지 데이터 넣기 */
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+.banner_img img{
+  width: 100%;
+}
+.detail_img {
+  width: 100%;
+  height: auto;
+}
+.detail_img img{ 
+  width: 100%;
+}
+.detail_right{
+  position: sticky;
+  top: 100px;
+  min-width: 480px;
+  /* max-width: 480px; */
+  height: 100vh;
+}
+.detail_sticky{
+  width: 100%;
+  height: auto;
+  padding: 20px 10px 0 0px;
+  text-align: left;
+}
+.detail_sticky_top{
+  margin-bottom: 50px;
+}
+.detail_sticky_top >.price{
+  margin-top: 50px;
+}
+.option{
+  border-top: 1px solid #ddd;
+  padding: 20px 0;
+}
+.option >h5{
+  width: 150px;
+  float: left;
+  color: #999;
+  font-weight: normal;
+  font-family: 'Poppins', sans-serif;
+}
+.option >span{
+  display: inline-block;
+  width: auto;
+  height: 30px;
+  line-height: 28px;
+  padding: 2px 10px;
+  border: 1px solid #000;
+  margin-right: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+.option_size{
+  width: 100%;
+}
+.option_size >span{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+ 
+}
+.option_color{
+  width: 100%;
+}
+.option_color >span{
+  line-height: 23px;
+}
+.detail-button {
+  background: inherit;
+  height: 46px;
+  line-height: 40px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  display: flex;
+  display: grid;
+  grid-template-columns: 90px 120px 1fr;
+  text-align: center;
+}
+.detail-button >div{
+  border: 1px solid #E05615;
+  color: #E05615 ;
+  cursor: pointer;
+  font-size: 13px;
+}
+.detail-button >div:nth-child(1){
+  border-right: 0;
+}
+.detail-button >div:nth-child(2){
+  border-right: 0;
+}
+.detail-button >div:nth-child(3){
+ /*  background-color: #E05615;
+  color: #fff; */
+}
+.detail-button >div:hover{
+  background-color: #E05615 ;
+  color: #fff;
+}
+.detail-button >div:nth-child(2):hover{
+}
+/* .detail-button >div:nth-child(3):hover{
+  background-color: #ae3d09;
+}
+ */
+.option >span.selected{
+  background-color: #000;
+  color: #fff;
+}

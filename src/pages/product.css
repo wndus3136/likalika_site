@@ -1,0 +1,80 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+.col {
+  flex: 0 0 25%; /* 한 줄에 4개의 열을 표시 */
+  box-sizing: border-box; 
+  padding: 0 10px; 
+}
+.product_page {
+    width: 1300px;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 0 12px;
+    margin-bottom: 50px;
+}
+.product_page >h5{
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-align: left;
+    padding-top: 25px;
+    margin-bottom: 20px;
+}
+.product-sort{
+    margin-bottom: 30px;
+}
+.product-sort >ul{
+    display: flex;
+}
+.product-sort >ul >li{
+    font-size: 15px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: bold;
+    color: #00000099;
+    cursor: pointer;
+    margin-right: 20px;
+}
+.product-sort >ul >li:hover{
+    color: #999;
+}
+/* .product-sort >ul >li::before{
+    content: '/';
+    margin: 0 10px;
+    color: #ccc;
+} */
+.product-sort >ul li:first-child:before {
+    content: none;
+}
+.product-sort ul li.selected {
+    color: #000;
+    border-bottom: 1px solid #000;
+}
+.pagination {
+    width: 140px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+.pagination >button {
+    background: none;
+    border: none;
+}
+.pagination >button.active{
+    font-weight: 600;
+}
+.pagination >button{
+    margin-right: 20px;
+}
+/* .pagination >button:first-child {
+    margin-right: 20px;
+} */
+.pagination >button:last-child{
+    margin-left: 0px;
+}
+.option >h5{
+    font-size: 16px;
+}
