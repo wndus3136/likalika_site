@@ -19,7 +19,7 @@ export const Mypage = () => {
         <div className='rating'>
           <div className='rating_customer'>
              <div className='rating_img'>
-               <img src='/lika_img/likalika.png'/>
+              <img src={`${process.env.PUBLIC_URL}/lika_img/likalika.png`} alt="likalika 이미지"/>
              </div>
             <div className='rating_text'>
               <p className='kr'>반가워요, <span className='user_name'>{state.user.name}</span>님</p>

@@ -45,5 +45,20 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
+  },
+  "homepage": "http://wndus3136.github.io/likalika",
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wndus3136/likalika.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wndus3136/likalika/issues"
+  },
+  "author": "",
+  "license": "ISC"
 }
