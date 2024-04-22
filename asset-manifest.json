@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/likalika_site/static/css/main.eaaa8aaa.css",
+    "main.js": "/likalika_site/static/js/main.fdd17b66.js",
+    "static/js/453.bf52bb0e.chunk.js": "/likalika_site/static/js/453.bf52bb0e.chunk.js",
+    "static/media/about.jpg": "/likalika_site/static/media/about.3455969e9dbe4e96e155.jpg",
+    "static/media/event.png": "/likalika_site/static/media/event.c08a95755e80c6a1cf41.png",
+    "index.html": "/likalika_site/index.html",
+    "main.eaaa8aaa.css.map": "/likalika_site/static/css/main.eaaa8aaa.css.map",
+    "main.fdd17b66.js.map": "/likalika_site/static/js/main.fdd17b66.js.map",
+    "453.bf52bb0e.chunk.js.map": "/likalika_site/static/js/453.bf52bb0e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eaaa8aaa.css",
+    "static/js/main.fdd17b66.js"
+  ]
+}
