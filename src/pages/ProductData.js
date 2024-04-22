@@ -38,6 +38,7 @@ const data = [
       image: process.env.PUBLIC_URL+'/lika_img/product_2.jpg',
       banner: process.env.PUBLIC_URL+'/lika_img/product_2_1.jpg',
       detail: [
+        process.env.PUBLIC_URL+'/lika_img/detail1/detail1_1.jpg',
         process.env.PUBLIC_URL+'/lika_img/detail2/p_001.jpg',
         process.env.PUBLIC_URL+'/lika_img/detail2/p_002.jpg',
         process.env.PUBLIC_URL+'/lika_img/detail2/p_003.jpg',
