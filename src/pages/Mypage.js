@@ -41,7 +41,7 @@ export const Mypage = () => {
           <h5>Order</h5>
           <ul className='order_summ'>
             <li>
-               <h5>1</h5>
+               <h5>0</h5>
                <p>입금전</p>
             </li>
             <li>
